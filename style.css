@@ -1,0 +1,143 @@
+/*-------Google fonts------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+/* ---------------
+Reuseable component
+------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ededed;
+}
+/*------- start header section ------*/
+header{
+    background-color: #30336b;
+}
+
+.container{
+    max-width: 990px;
+    height: 95vh;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #30336b;
+    padding: 20px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(236, 236, 236);
+    transition: all .3s ease;
+}
+nav ul li a:hover{
+    border-bottom: 4px solid #5d50eb;
+    color: #aaa;
+}
+.nav-right a{
+    text-decoration: none;
+}
+.btn{
+    background-color: #5d50eb;
+    color: rgb(236, 236, 236);
+    padding: 8px 20px;
+    border-radius: 2px;
+    transition: all .3s ease;
+}
+.btn:hover{
+    background-color: #4b42ac;
+}
+.hero-areas{
+    display: flex;
+    padding: 20px;
+}
+.left-part{
+    flex-basis: 50%;
+    margin-top: 80px;
+}
+.left-part h1{
+    margin-bottom: 20px;
+    color: rgb(236, 236, 236);
+}
+.left-part a{
+    text-decoration: none;
+}
+.right-part{
+    flex-basis: 50%;
+    margin-right: 80px;
+    margin-bottom: 120px;
+}
+.right-part img{
+    width: 100%;
+}
+/*----- start playes section -----*/
+main{
+    display: flex;
+    justify-content: center;
+}
+.featured-player h1{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+span{
+    color: #4b42ac;
+    border-bottom: 4px solid #4b42ac;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+}
+.grid-container > div{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 1px #ededed;
+    max-width: 280px;
+    margin: 10px;
+    transition: all .5s ease-in-out;
+}
+.grid-container > div:hover{
+    box-shadow: 5px 5px 5px 1px #aaa;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    width: 250px;
+    height: 300px;
+    transition: 2s;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.image img:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    overflow: hidden;
+}
+.info{
+    padding: 10px 0;
+}
+.info h2{
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+}
+.info p{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.89);
+}
