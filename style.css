@@ -10,7 +10,10 @@ Reuseable component
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #ededed;
+    background-color: aliceblue;
+}
+a{
+    text-decoration: none;
 }
 /*------- start header section ------*/
 header{
@@ -18,7 +21,7 @@ header{
 }
 
 .container{
-    max-width: 990px;
+    max-width: 920px;
     height: 95vh;
     margin: 0 auto;
 }
@@ -83,16 +86,17 @@ nav ul li a:hover{
 main{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .featured-player h1{
     text-align: center;
     margin: 30px 0;
-    font-size: 30px;
-    font-weight: 700;
 }
-span{
+.span{
     color: #4b42ac;
     border-bottom: 4px solid #4b42ac;
+    letter-spacing: 3px;
 }
 .grid-container{
     display: grid;
@@ -118,7 +122,7 @@ span{
 .image img{
     width: 250px;
     height: 300px;
-    transition: 2s;
+    transition: 1s;
     border-radius: 5px;
     object-fit: cover;
 }
@@ -140,4 +144,203 @@ span{
     font-size: 13px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.89);
+}
+/* women's world cup section  */
+.container-2{
+    display: flex;
+    max-width: 920px;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 30px;
+}
+.left-text{
+    flex-basis: 50%;
+}
+.left-text p{
+    font-size: 14px;
+    padding: 0 15px 0 0;
+    margin-bottom: 20px;
+}
+.right-img{
+    flex-basis: 50%;
+}
+.right-img img{
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+.right-img img:hover{
+    opacity: .8;
+}
+/*------------ Events section---------- */
+.event-container{
+    background-color: aliceblue;
+    padding: 50px;
+}
+.event-container h1{
+    text-align: center;
+    margin: 20px auto;
+}
+.events{
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+.event{
+    position: relative;
+    background-color: #30336b;
+    color: #fff;
+    font-size: 22px;
+    padding: 50px;
+    margin: 50px 0;
+}
+.match{
+    margin: 40px auto;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.date{
+    position: absolute;
+    top: -20px;
+    left: 70px;
+    background-color: #5d50eb;
+    padding: 5px 30px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 3px;
+}
+.buy a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    border: 2px solid #5d50eb;
+    padding: 10px 20px;
+    transition: .5s;
+    border-radius: 1px;
+}
+.buy a:hover{
+    background-color: #5d50eb;
+}
+.span2{
+    color:green;
+    font-size: 35px;
+}
+.view-btn{
+    text-align: center;
+}
+.view-btn a{
+    color: #000;
+}
+.view-btn a:hover{
+    color: #fff;
+}
+/* Start Contact Section  */
+.contact-container{
+    max-width: 900px;
+    padding: 10px;
+}
+.contact-container h1{
+    margin: 50px 0;
+    text-align: center;
+}
+label{
+    font-size: 15px;
+    font-weight: 600;
+}
+form{
+    width: 100%;
+}
+input{
+    display: block;
+}
+.first-name, .subject, .email{
+    width: 400px;
+    background-color: aliceblue;
+    outline: none;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #4b42ac;   
+    font-size: 12px;
+    font-weight: 600;
+}
+.first-name:focus,
+.subject:focus, 
+.email:focus{
+    border-bottom: 3px solid #5d50eb; 
+}
+.message{
+    display: block;
+    width: 400px;
+    height: 200px;
+    border: 1px solid #5d50eb;
+    outline: none;
+    resize: none;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+label{
+    margin: 10px 0;
+    display: inline-block;
+}
+.message:focus{
+    border: 2px solid #5d50eb;
+}
+.submit-btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 2px solid #5d50eb;
+    background-color: #4b42ac;
+    color: #fff;
+    transition: .5s;
+    border-radius: 3px;
+}
+.submit-btn:hover{
+    background-color: #5d50eb;
+}
+/* Start Footer section  */
+footer{
+    text-align: center;
+    padding: 40px;
+}
+.social-icons{
+    margin: 10px;
+}
+.fab{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(202, 202, 202);
+    color: #000;
+    padding: 8px;
+    margin: 10px;
+    font-size: 18px;
+    transition: .2s;
+
+}
+.fa-facebook:hover{
+    color: #3b5998;
+}
+.fa-instagram:hover{
+    color: #FD1D1D;
+}
+.fa-twitter:hover{
+    color: #00acee;
+}
+.fa-linkedin-in:hover{
+    color: #0e76a8;
+}
+.fa-youtube:hover{
+    color: #c4302b;
+}
+.copyright p{
+    font-size: 14px;
+    font-weight: 600;
 }
