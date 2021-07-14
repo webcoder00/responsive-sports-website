@@ -1,8 +1,10 @@
-/*-------Google fonts------*/
+/*-------------------------------------------------------------------------
+                             Google Fonts 
+----------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-/* ---------------
-Reuseable component
-------------------*/
+/*-------------------------------------------------------------------------
+                             Reuseable Commponents 
+----------------------------------------------------------------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -15,14 +17,15 @@ body{
 a{
     text-decoration: none;
 }
-/*------- start header section ------*/
+/*-------------------------------------------------------------------------
+                             Start Header Nav Section
+----------------------------------------------------------------------------*/
 header{
     background-color: #30336b;
 }
 
 .container{
-    max-width: 920px;
-    height: 95vh;
+    max-width: 90%;
     margin: 0 auto;
 }
 nav {
@@ -59,30 +62,40 @@ nav ul li a:hover{
 .btn:hover{
     background-color: #4b42ac;
 }
+/*-------------------------------------------------------------------------
+                             Start Header Hero Area Section
+----------------------------------------------------------------------------*/
 .hero-areas{
     display: flex;
     padding: 20px;
 }
 .left-part{
     flex-basis: 50%;
-    margin-top: 80px;
+    margin-top: 120px;
 }
 .left-part h1{
     margin-bottom: 20px;
     color: rgb(236, 236, 236);
+    line-height: 1.8;
 }
 .left-part a{
     text-decoration: none;
 }
 .right-part{
     flex-basis: 50%;
-    margin-right: 80px;
+    margin-right: 120px;
     margin-bottom: 120px;
 }
 .right-part img{
-    width: 100%;
+    width: 130%;
+    margin-top: 30px;
 }
-/*----- start playes section -----*/
+.menu-toogle{
+    display: none;
+}
+/*-------------------------------------------------------------------------
+                             Start Main Section 
+----------------------------------------------------------------------------*/
 main{
     display: flex;
     justify-content: center;
@@ -145,10 +158,12 @@ main{
     font-weight: 400;
     color: rgba(0, 0, 0, 0.89);
 }
-/* women's world cup section  */
+/*-------------------------------------------------------------------------
+                             Start Women's World Cup Section 
+----------------------------------------------------------------------------*/
 .container-2{
     display: flex;
-    max-width: 920px;
+    max-width: 90%;
     flex-wrap: wrap;
     padding: 30px;
     margin: 30px;
@@ -173,10 +188,12 @@ main{
 .right-img img:hover{
     opacity: .8;
 }
-/*------------ Events section---------- */
+/*-------------------------------------------------------------------------
+                             Start Events Section 
+----------------------------------------------------------------------------*/
 .event-container{
     background-color: aliceblue;
-    padding: 50px;
+    padding: 20px;
 }
 .event-container h1{
     text-align: center;
@@ -207,7 +224,7 @@ main{
 .date{
     position: absolute;
     top: -20px;
-    left: 70px;
+    left: 75px;
     background-color: #5d50eb;
     padding: 5px 30px;
     font-size: 12px;
@@ -239,9 +256,11 @@ main{
 .view-btn a:hover{
     color: #fff;
 }
-/* Start Contact Section  */
+/*-------------------------------------------------------------------------
+                             Start Contact Section 
+----------------------------------------------------------------------------*/
 .contact-container{
-    max-width: 900px;
+    max-width: 90%;
     padding: 10px;
 }
 .contact-container h1{
@@ -305,7 +324,9 @@ label{
 .submit-btn:hover{
     background-color: #5d50eb;
 }
-/* Start Footer section  */
+/*-------------------------------------------------------------------------
+                             Start Footer Section 
+----------------------------------------------------------------------------*/
 footer{
     text-align: center;
     padding: 40px;
@@ -344,3 +365,98 @@ footer{
     font-size: 14px;
     font-weight: 600;
 }
+/*-------------------------------------------------------------------------
+                    Start @@Media Quries For Tables Devices
+----------------------------------------------------------------------------*/
+@media screen and (max-width: 992px) {
+    .container{
+        height: 100%;
+    }
+    .menu-toogle{
+        display: block;
+        color: #fff;
+        font-size: 18px;
+        background-color: #5d50eb;
+        padding: 2px 10px;
+    }
+    .nav-left{
+        display: none;
+    }
+    .grid-container{
+        grid-template-columns: 300px 300px;
+    }
+    .left-text{
+        flex-basis: 45%;
+    }
+    .right-img{
+        flex-basis: 45%;
+    }
+    .container-2{
+        justify-content: center;
+        align-items: center;
+    }
+    .events{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*-------------------------------------------------------------------------
+                    Start @@Media Quries For Mobile Devices 
+----------------------------------------------------------------------------*/
+@media screen and (max-width: 662px){
+    .container{
+        width: 300px;
+    }
+    .hero-areas{
+        background-image: url('images/hero1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .btn{
+        font-size: 12px
+    }
+    .left-part{
+        width: 100%;
+    }
+    .left-part h1{
+        font-size: 14px;
+    }
+    .right-part{
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+    .nav-left{
+        display: none;
+    }
+    .grid-container{
+        grid-template-columns: 300px;
+    }
+    .left-text{
+        flex-basis: 95%;
+    }
+    .left-text a{
+        margin: 20px auto;
+        display: inline-block;
+    }
+    .right-img{
+        flex-basis: 95%;
+    }
+    .container-2{
+        justify-content: center;
+        align-items: center;
+    }
+    .events{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .first-name, .subject, .email{
+        width: 300px;
+    }
+    .message{
+        width: 300px;
+    }
+}
+/*-------------------------------------------------------------------------
+                    Thank You So much! 
+                  ----------------- Develop By Ahmed sohel
+----------------------------------------------------------------------------*/
